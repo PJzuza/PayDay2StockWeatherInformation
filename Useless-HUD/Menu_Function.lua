@@ -229,5 +229,5 @@ end
 
 Hooks:Add("MenuManagerBuildCustomMenus", "UselessHUDOptions", function(menu_manager, nodes)
 	nodes[UselessHUD.options_menu] = MenuHelper:BuildMenu( UselessHUD.options_menu )
-	MenuHelper:AddMenuItem( MenuHelper.menus.lua_mod_options_menu, UselessHUD.options_menu, "UselessHUD_menu_title", "UselessHUD_menu_desc", 1 )
+	MenuHelper:AddMenuItem(nodes["blt_options"], UselessHUD.options_menu, "UselessHUD_menu_title", "UselessHUD_menu_desc", 1 )
 end)
